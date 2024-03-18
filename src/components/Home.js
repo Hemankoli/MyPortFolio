@@ -1,5 +1,5 @@
 import React from 'react';
-import resumePDF from '../Assets/resume.pdf'; // Import your resume PDF file
+import resumePDF from '../Assets/Hemant resume.pdf'; // Import your resume PDF file
 import About from './About';
 import Project from './Project'
 import Contact from './Contact'
