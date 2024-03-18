@@ -9,6 +9,7 @@ import mongodb from '../images/mongo.png'
 import Tailwind from '../images/tailwind.png'
 import git from '../images/git.png'
 
+
 const ProjectsPage = () => {
   return (
     <>
@@ -32,8 +33,8 @@ const ProjectsPage = () => {
             Portfolio Website is created using React.Js and Tailwind CSS to showcase your relevant skills and experience. It is a great way of growing your online presence and get noticed. It can be used to get a job or to attract clients to your services.
             </p>
             <div className="mt-4">  
-              <a href="https://github.com/Hemankoli/FolioMine" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 mr-4">GitHub</a>
-              <a href="hemankoli.github.io/FolioMine/" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-700">Live Demo</a>
+              <a href="https://github.com/Hemankoli/MyPortFolio" target="_blank" rel="noopener noreferrer" className="text-blue-500 font-bold italic underline text-lg hover:text-blue-700 mr-4">GitHub</a>
+              <a href="hemankoli.github.io/FolioMine/" target="_blank" rel="noopener noreferrer" className="text-green-500 font-bold italic underline text-lg hover:text-green-700">Live Demo</a>
             </div>
           </div>
 
@@ -51,8 +52,8 @@ const ProjectsPage = () => {
             A to-do app is a digital tool designed to help users organize and manage their tasks. Users can create, prioritize, and track their tasks with deadlines, set reminders, and categorize items for better organization. These apps often offer features like collaboration, syncing across devices, and notifications to ensure efficient task management.
             </p>
             <div className="mt-4">
-              <a href="https://github.com/Hemankoli/todo-app" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 mr-4">GitHub</a>
-              <a href="https://todoalist.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-700">Live Demo</a>
+              <a href="https://github.com/Hemankoli/todo-app" target="_blank" rel="noopener noreferrer" className="text-blue-500 font-bold italic underline text-lg  hover:text-blue-700 mr-4">GitHub</a>
+              <a href="https://todoalist.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-green-500 font-bold italic underline text-lg hover:text-green-700">Live Demo</a>
             </div>
           </div>
 
@@ -70,8 +71,8 @@ const ProjectsPage = () => {
             JavaScript has a built-in calculator, and mathematical operations can be done directly in the console. We can do some simple addition with numbers, for example adding 10 and 20 , using the plus sign ( + ).
             </p>
             <div className="mt-4">
-              <a href="https://github.com/Hemankoli/Calculator" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 mr-4">GitHub</a>
-              <a href="https://replit.com/@btsheman/CalculatorApp" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-700">Live Demo</a>
+              <a href="https://github.com/Hemankoli/Calculator" target="_blank" rel="noopener noreferrer" className="text-blue-500 font-bold italic underline text-lg hover:text-blue-700 mr-4">GitHub</a>
+              <a href="https://replit.com/@btsheman/CalculatorApp" target="_blank" rel="noopener noreferrer" className="text-green-500 font-bold italic underline text-lg hover:text-green-700">Live Demo</a>
             </div>
           </div>
 
@@ -90,8 +91,8 @@ const ProjectsPage = () => {
             It allows users to create, edit, and delete blog posts, on existing posts. The Node.js backend handles user authentication and data storage using MongoDB, ensuring secure and efficient management of blog content. Users can also search for specific blog posts, making it a feature-rich platform for bloggers and readers alike.
             </p>
             <div className="mt-4">
-              <a href="https://github.com/Hemankoli/BLOGAPPPROJ" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 mr-4">GitHub</a>
-              <a href="https://pear-worried-skunk.cyclic.app/login" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-700">Live Demo</a>
+              <a href="https://github.com/Hemankoli/BLOGAPPPROJ" target="_blank" rel="noopener noreferrer" className="text-blue-500 font-bold italic underline text-lg hover:text-blue-700 mr-4">GitHub</a>
+              <a href="https://pear-worried-skunk.cyclic.app/login" target="_blank" rel="noopener noreferrer" className="text-green-500 font-bold italic underline text-lg hover:text-green-700">Live Demo</a>
             </div>
           </div>
 
@@ -108,8 +109,8 @@ const ProjectsPage = () => {
             A React-based crypto app providing real-time market data, portfolio tracking, and secure wallet management. Users can buy, sell, and monitor their favorite cryptocurrencies with intuitive UI/UX. Enjoy a seamless experience with cutting-edge security features.
             </p>
             <div className="mt-4">
-              <a href="https://github.com/Hemankoli/CryptoApp" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 mr-4">GitHub</a>
-              <a href="https://cryptoapp-heman.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-700">Live Demo</a>
+              <a href="https://github.com/Hemankoli/CryptoApp" target="_blank" rel="noopener noreferrer" className="text-blue-500 font-bold italic underline text-lg hover:text-blue-700 mr-4">GitHub</a>
+              <a href="https://cryptoapp-heman.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-green-500 font-bold italic underline text-lg hover:text-green-700">Live Demo</a>
             </div>
           </div>
 
@@ -129,8 +130,8 @@ const ProjectsPage = () => {
             Ecommerce App project details will be added soon. Stay tuned!
             </p>
             <div className="mt-4">
-              <a href="https://github.com/yourusername/project2" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 mr-4">GitHub</a>
-              <a href="https://project2-live-link.com" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-700">Live Demo</a>
+              <a href="https://github.com/yourusername/project2" target="_blank" rel="noopener noreferrer" className="text-blue-500 font-bold italic underline text-lg hover:text-blue-700 mr-4">GitHub</a>
+              <a href="https://project2-live-link.com" target="_blank" rel="noopener noreferrer" className="text-green-500 font-bold italic underline text-lg hover:text-green-700">Live Demo</a>
             </div>
           </div>
           {/* Add more project cards as needed */}

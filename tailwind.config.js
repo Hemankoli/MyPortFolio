@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        customBlue: 'rgb(13,36,56)', // Define your custom color
+        customBlue: 'rgb(13,36, 56)', // Define your custom color
       },
     },
-  },
+  },  
   plugins: [],
 }

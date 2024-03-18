@@ -24,6 +24,11 @@ const Header = () => {
         <nav className="hidden md:flex items-center">
           <ul className="flex font-bold items-center space-x-8">
             <li>
+              <Link to="/" className="flex hover:text-orange-500">
+                <span className="text-2xl">Home</span>
+              </Link>
+            </li>
+            <li>
               <Link to="/about" className="flex hover:text-orange-500">
                 <span className="text-2xl">About</span>
               </Link>
@@ -46,7 +51,12 @@ const Header = () => {
       {/* Mobile menu */}
       <nav className={`md:hidden ${mobileMenuOpen ? 'block' : 'hidden'} bottom-0 left-0 right-0 bg-customBlue py-6 px-8`}>
         <ul className="flex font-bold items-center flex-col space-y-4">
-          
+            <li>
+              <Link to="/" className="flex hover:text-orange-500">
+                <span className="text-lg">Home</span>
+              </Link>
+            </li>
+            <p className='border w-full'></p>
           <li>
             <Link to="/about" className="text-lg text-white hover:text-orange-500" onClick={toggleMobileMenu}>
               About
@@ -64,7 +74,6 @@ const Header = () => {
               Contact
             </Link>
           </li>
-          <p className='border w-full'></p>
         </ul>
       </nav>
     </header>
