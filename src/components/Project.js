@@ -34,7 +34,7 @@ const ProjectsPage = () => {
             </p>
             <div className="mt-4">  
               <a href="https://github.com/Hemankoli/MyPortFolio" target="_blank" rel="noopener noreferrer" className="text-blue-500 font-bold italic underline text-lg hover:text-blue-700 mr-4">GitHub</a>
-              <a href="hemankoli.github.io/FolioMine/" target="_blank" rel="noopener noreferrer" className="text-green-500 font-bold italic underline text-lg hover:text-green-700">Live Demo</a>
+              <a href="https://hemantkoliportfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-green-500 font-bold italic underline text-lg hover:text-green-700">Live Demo</a>
             </div>
           </div>
 
