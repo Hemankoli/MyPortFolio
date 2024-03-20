@@ -11,6 +11,7 @@ import git from '../images/git.png'
 
 
 const ProjectsPage = () => {
+
   return (
     <>
       <div className="text-white mb-20 mt-28">
@@ -18,11 +19,11 @@ const ProjectsPage = () => {
         <p className="text-sm  text-center">My Recent Works</p>
           <h2 className="text-4xl text-center font-bold">Projects 💻 </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:mx-96">
-          <div className="bg-customBlue w-96 shadow-current shadow-sm p-4 md:m-0 m-6 rounded-lg">
-            <img src={"https://media.geeksforgeeks.org/wp-content/uploads/20240207113731/Portfolio-Website-Project-Banner.webp"} alt="Project 1" className="w-62 h-60 mb-4 rounded-lg" />
-              <h3 className="text-2xl font-bold mb-2">Portfolio</h3>
-              <div className='flex md:space-x-6 mt-4 mb-4'>
+        <div className="grid grid-cols-1 md:mx-40  md:grid-cols-3 gap-4 ">
+          <div className="bg-customBlue w-96 mb-20 border border-blue-500 shadow-xl shadow-blue-400 p-6 rounded-lg">
+            <img src={"https://media.geeksforgeeks.org/wp-content/uploads/20240207113731/Portfolio-Website-Project-Banner.webp"} alt="Project 1" className="w-96 h-60 mb-4 rounded-lg" />
+              <h3 className="text-2xl font-bold mb-2">PORTFOLIO</h3>
+              <div className='flex md:space-x-6 space-x-6 mt-8 mb-4'>
                 <img src={react} alt="react" className="w-8 h-8" />
                 <img src={Tailwind} alt="Tailwind" className="w-8 h-8" />
                 <img src={css} alt="css" className="w-8 h-8" />
@@ -38,10 +39,10 @@ const ProjectsPage = () => {
             </div>
           </div>
 
-          <div className="bg-customBlue w-96 shadow-current shadow-sm p-4 md:m-0 m-6 rounded-lg">
-            <img src={"https://img.freepik.com/premium-vector/list-icon-with-hand-drawn-text-checklist-task-list-vector-illustration-flat-style-white-background_157943-819.jpg"} alt="Project 2" className="w-96 h-60 mb-4 rounded-lg" />
-            <h3 className="text-2xl font-bold mb-2">To-Do Web</h3>
-            <div className='flex md:space-x-6 mt-4 mb-4'>
+          <div className="bg-customBlue w-96 mb-20 border border-blue-500 shadow-xl shadow-blue-400 p-6 rounded-lg">
+            <img src={"https://img.freepik.com/premium-vector/list-icon-with-hand-drawn-text-checklist-task-list-vector-illustration-flat-style-white-background_157943-819.jpg"} alt="Project 2" className="w-96 mb-20 h-60 mb-4 rounded-lg" />
+            <h3 className="text-2xl font-bold mb-2">TO-DO WEB</h3>
+            <div className='flex md:space-x-6 space-x-6 mt-8 mb-4'>
                 <img src={react} alt="react" className="w-8 h-8" />
                 <img src={Tailwind} alt="Tailwind" className="w-8 h-8" />
                 <img src={mongodb} alt="mongodb" className="w-8 h-8" />
@@ -57,10 +58,10 @@ const ProjectsPage = () => {
             </div>
           </div>
 
-          <div className="bg-customBlue w-96 shadow-current shadow-sm p-4 md:m-0 m-6 rounded-lg">
+          <div className="bg-customBlue w-96 mb-20 border border-blue-500 shadow-xl shadow-blue-400 p-6 rounded-lg">
             <img src={"https://i.ytimg.com/vi/9FMdYtmVAO8/maxresdefault.jpg"} alt="Project 2" className="w-62 h-60 mb-4 rounded-lg" />
-            <h3 className="text-2xl font-bold mb-2">Calculator Web</h3>
-            <div className='flex md:space-x-6 mt-4 mb-4'>
+            <h3 className="text-2xl font-bold mb-2">CALCULATOR WEB</h3>
+            <div className='flex md:space-x-6 space-x-6 mt-8 mb-4'>
                 <img src={html} alt="html" className="w-8 h-8" />
                 <img src={css} alt="css" className="w-8 h-8" />
                 <img src={JavaScript} alt="javascript" className="w-8 h-8" />
@@ -76,10 +77,10 @@ const ProjectsPage = () => {
             </div>
           </div>
 
-          <div className="bg-customBlue w-96 shadow-current shadow-sm p-4 md:m-0 m-6 rounded-lg">
+          <div className="bg-customBlue w-96 mb-20 border border-blue-500 shadow-xl shadow-blue-400 p-6 rounded-lg">
             <img src={"https://www.appypie.com/wp-content/uploads/2024/01/An-App-to-Match-Your-Website.png"} alt="Project 2" className="w-62 h-60 mb-4 rounded-lg" />
-            <h3 className="text-2xl font-bold mb-2">Blog App Web</h3>
-            <div className='flex md:space-x-6 mt-4 mb-4'>
+            <h3 className="text-2xl font-bold mb-2">BLOG WEBSITE</h3>
+            <div className='flex md:space-x-6 space-x-6 mt-8 mb-4'>
                 <img src={Node} alt="node" className="w-8 h-8" />
                 <img src={Tailwind} alt="Tailwind" className="w-8 h-8" />
                 <img src={Express} alt="express" className="w-8 h-8" />
@@ -96,10 +97,10 @@ const ProjectsPage = () => {
             </div>
           </div>
 
-          <div className="bg-customBlue w-96 shadow-current shadow-sm p-4 md:m-0 m-6 rounded-lg">
+          <div className="bg-customBlue w-96 mb-20 border border-blue-500 shadow-xl shadow-blue-400 p-6 rounded-lg">
             <img src={"https://www.shutterstock.com/image-photo/romeitaly-november-4-2021-man-600nw-2069918705.jpg"} alt="Project 2" className="w-62 h-60 mb-4 rounded-lg" />
-            <h3 className="text-2xl font-bold mb-2">Crypto App</h3>
-            <div className='flex md:space-x-6 mt-4 mb-4'>
+            <h3 className="text-2xl font-bold mb-2">CRYPTO WEBSITE</h3>
+            <div className='flex md:space-x-6 space-x-6 mt-8 mb-4'>
                 <img src={react} alt="react" className="w-8 h-8" />
                 <img src={Tailwind} alt="Tailwind" className="w-8 h-8" />
                 <img src={git} alt="git" className="w-8 h-8" />
@@ -114,10 +115,10 @@ const ProjectsPage = () => {
             </div>
           </div>
 
-          <div className="bg-customBlue w-96 shadow-current shadow-sm p-4 md:m-0 m-6 rounded-lg opacity-40">
+          <div className="bg-customBlue w-96 mb-20 border border-blue-500 shadow-xl shadow-blue-400 p-6 rounded-lg opacity-40">
             <img src={"https://www.elsner.com/wp-content/uploads/2017/10/Initial-preparation-for-an-eCommerce-project-min.jpg"} alt="Project 2" className="w-62 h-60 mb-4 rounded-lg" />
-            <h3 className="text-2xl font-bold mb-2">Ecommerce App</h3>
-            <div className='flex md:space-x-6 mt-4 mb-4'>
+            <h3 className="text-2xl font-bold mb-2">ECOMMERCE APP</h3>
+            <div className='flex md:space-x-6 space-x-6 mt-8 mb-4'>
                 <img src={react} alt="react" className="w-8 h-8" />
                 <img src={Tailwind} alt="Tailwind" className="w-8 h-8" />
                 <img src={Node} alt="node" className="w-8 h-8" />

@@ -64,8 +64,8 @@ const About = () => {
         <div className="mb-16">
           <h2 className="text-2xl font-bold italic">Education 👨🏻‍🎓</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div className="bg-customBlue shadow-current shadow-sm p-4 md:m-0 m-6 rounded-lg">
+        <div className="grid grid-cols-1 m-auto md:w-auto w-96 md:grid-cols-3 gap-12">
+          <div className="bg-customBlue border border-blue-400  shadow-2xl shadow-blue-400 p-4 md:m-0 m-6 rounded-lg">
             <h4 className="text-lg font-bold">2019 - 2023</h4>
             <h3 className="text-xl font-semibold mb-2">Bachelor's of Technology Degree</h3>
             <p>
@@ -75,7 +75,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="bg-customBlue shadow-current shadow-sm p-4 md:m-0 m-6 rounded-lg">
+          <div className="bg-customBlue border border-blue-400  shadow-2xl shadow-blue-400 p-4 md:m-0 m-6 rounded-lg">
             <h4 className="text-lg font-bold">2018 - 2019</h4>
             <h3 className="text-xl font-semibold mb-2">Higher Secondary Education (12th)</h3>
             <p>
@@ -84,7 +84,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="bg-customBlue shadow-current shadow-sm p-4 md:m-0 m-6 rounded-lg">
+          <div className="bg-customBlue border border-blue-400  shadow-2xl shadow-blue-400 p-4 md:m-0 m-6 rounded-lg">
             <h4 className="text-lg font-bold">2016 - 2017</h4>
             <h3 className="text-xl font-semibold mb-2">Secondary Education (10th)</h3>
             <p>
@@ -100,8 +100,8 @@ const About = () => {
         <div className="mb-16">
           <h2 className="text-2xl font-bold italic">Experience 🚀</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div className="bg-customBlue  shadow-current shadow-sm p-4 md:m-0 m-6 rounded-lg">
+        <div className="grid grid-cols-1 m-auto md:w-auto w-96 md:grid-cols-3 gap-12">
+          <div className="bg-customBlue border border-blue-400   shadow-2xl shadow-blue-400 p-4 md:m-0 m-6 rounded-lg">
             <h4 className="text-lg font-bold">1+ Year</h4>
             <h3 className="text-xl font-semibold mb-2">Front-end Developer</h3>
             <p>
@@ -111,7 +111,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="bg-customBlue shadow-current shadow-sm p-4 md:m-0 m-6 rounded-lg">
+          <div className="bg-customBlue border border-blue-400  shadow-2xl shadow-blue-400 p-4 md:m-0 m-6 rounded-lg">
             <h4 className="text-lg font-bold">3+ Months</h4>
             <h3 className="text-xl font-semibold mb-2">Back-end Developer</h3>
             <p>
@@ -120,7 +120,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="bg-customBlue shadow-current shadow-sm p-4 md:m-0 m-6 rounded-lg">
+          <div className="bg-customBlue border border-blue-400  shadow-2xl shadow-blue-400 p-4 md:m-0 m-6 rounded-lg">
             <h4 className="text-lg font-bold">1+ Month</h4>
             <h3 className="text-xl font-semibold mb-2">MERN Stack Developer</h3>
             <p>
