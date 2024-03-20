@@ -11,7 +11,7 @@ import git from '../images/git.png'
 
 
 const ProjectsPage = () => {
-
+  
   return (
     <>
       <div className="text-white mb-20 mt-28">
@@ -19,8 +19,8 @@ const ProjectsPage = () => {
         <p className="text-sm  text-center">My Recent Works</p>
           <h2 className="text-4xl text-center font-bold">Projects 💻 </h2>
         </div>
-        <div className="grid grid-cols-1 md:mx-40  md:grid-cols-3 gap-4 ">
-          <div className="bg-customBlue w-96 mb-20 border border-blue-500 shadow-xl shadow-blue-400 p-6 rounded-lg">
+        <div className="grid grid-cols-1 md:mx-40 md:grid-cols-3 gap-4 ">
+          <div className="bg-customBlue w-96 mx-auto mb-20 border border-blue-500 shadow-xl shadow-blue-400 p-6 rounded-lg">
             <img src={"https://media.geeksforgeeks.org/wp-content/uploads/20240207113731/Portfolio-Website-Project-Banner.webp"} alt="Project 1" className="w-96 h-60 mb-4 rounded-lg" />
               <h3 className="text-2xl font-bold mb-2">PORTFOLIO</h3>
               <div className='flex md:space-x-6 space-x-6 mt-8 mb-4'>
@@ -39,7 +39,7 @@ const ProjectsPage = () => {
             </div>
           </div>
 
-          <div className="bg-customBlue w-96 mb-20 border border-blue-500 shadow-xl shadow-blue-400 p-6 rounded-lg">
+          <div className="bg-customBlue w-96 mx-auto mb-20 border border-blue-500 shadow-xl shadow-blue-400 p-6 rounded-lg">
             <img src={"https://img.freepik.com/premium-vector/list-icon-with-hand-drawn-text-checklist-task-list-vector-illustration-flat-style-white-background_157943-819.jpg"} alt="Project 2" className="w-96 mb-20 h-60 mb-4 rounded-lg" />
             <h3 className="text-2xl font-bold mb-2">TO-DO WEB</h3>
             <div className='flex md:space-x-6 space-x-6 mt-8 mb-4'>
@@ -58,7 +58,7 @@ const ProjectsPage = () => {
             </div>
           </div>
 
-          <div className="bg-customBlue w-96 mb-20 border border-blue-500 shadow-xl shadow-blue-400 p-6 rounded-lg">
+          <div className="bg-customBlue w-96 mx-auto mb-20 border border-blue-500 shadow-xl shadow-blue-400 p-6 rounded-lg">
             <img src={"https://i.ytimg.com/vi/9FMdYtmVAO8/maxresdefault.jpg"} alt="Project 2" className="w-62 h-60 mb-4 rounded-lg" />
             <h3 className="text-2xl font-bold mb-2">CALCULATOR WEB</h3>
             <div className='flex md:space-x-6 space-x-6 mt-8 mb-4'>
@@ -77,7 +77,7 @@ const ProjectsPage = () => {
             </div>
           </div>
 
-          <div className="bg-customBlue w-96 mb-20 border border-blue-500 shadow-xl shadow-blue-400 p-6 rounded-lg">
+          <div className="bg-customBlue w-96 mx-auto mb-20 border border-blue-500 shadow-xl shadow-blue-400 p-6 rounded-lg">
             <img src={"https://www.appypie.com/wp-content/uploads/2024/01/An-App-to-Match-Your-Website.png"} alt="Project 2" className="w-62 h-60 mb-4 rounded-lg" />
             <h3 className="text-2xl font-bold mb-2">BLOG WEBSITE</h3>
             <div className='flex md:space-x-6 space-x-6 mt-8 mb-4'>
@@ -97,7 +97,7 @@ const ProjectsPage = () => {
             </div>
           </div>
 
-          <div className="bg-customBlue w-96 mb-20 border border-blue-500 shadow-xl shadow-blue-400 p-6 rounded-lg">
+          <div className="bg-customBlue w-96 mx-auto mb-20 border border-blue-500 shadow-xl shadow-blue-400 p-6 rounded-lg">
             <img src={"https://www.shutterstock.com/image-photo/romeitaly-november-4-2021-man-600nw-2069918705.jpg"} alt="Project 2" className="w-62 h-60 mb-4 rounded-lg" />
             <h3 className="text-2xl font-bold mb-2">CRYPTO WEBSITE</h3>
             <div className='flex md:space-x-6 space-x-6 mt-8 mb-4'>
@@ -115,7 +115,7 @@ const ProjectsPage = () => {
             </div>
           </div>
 
-          <div className="bg-customBlue w-96 mb-20 border border-blue-500 shadow-xl shadow-blue-400 p-6 rounded-lg opacity-40">
+          <div className="bg-customBlue w-96 mx-auto mb-20 border border-blue-500 shadow-xl shadow-blue-400 p-6 rounded-lg opacity-40">
             <img src={"https://www.elsner.com/wp-content/uploads/2017/10/Initial-preparation-for-an-eCommerce-project-min.jpg"} alt="Project 2" className="w-62 h-60 mb-4 rounded-lg" />
             <h3 className="text-2xl font-bold mb-2">ECOMMERCE APP</h3>
             <div className='flex md:space-x-6 space-x-6 mt-8 mb-4'>
@@ -135,7 +135,6 @@ const ProjectsPage = () => {
               <a href="https://project2-live-link.com" target="_blank" rel="noopener noreferrer" className="text-green-500 font-bold italic underline text-lg hover:text-green-700">Live Demo</a>
             </div>
           </div>
-          {/* Add more project cards as needed */}
         </div>
       </div>
     </>
