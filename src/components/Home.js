@@ -13,11 +13,11 @@ const Home = () => {
             <div className="animate-shake inline-block">&#x1F44B;</div> Hello, I'M HEMANT
           </h2>
           <p className="text-lg mt-8 mb-8">
-            I am a passionate MERN stack web developer<br></br> from India, deeply in love with coding <br></br>and exploring various tech domains.
+            I am a MERN stack developer<br></br> from India, deeply in love with coding <br></br>and exploring various tech domains.
           </p>
           <ul className='mb-8 px-2'>
             <li>🚀  Im currently building Full Stack Projects.</li>
-            <li>🎯  Im on a mission to become a Full Stack developer.</li>
+            <li>🎯  My goal is to work as Full Stack developer.</li>
             <li>💻  I bring life to designs through lines of code.</li>
           </ul>
           <div className="flex items-center justify-center md:justify-start mb-6">
