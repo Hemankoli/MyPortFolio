@@ -38,21 +38,23 @@ const About = () => {
         <div className="mb-20">
           <h2 className="text-2xl font-bold italic">Skills ⚡</h2>
         </div>
-        <div className="flex flex-wrap justify-center md:space-x-10">
+        <div className="md:flex justify-center md:space-x-10">
           {/* First Row */}
-          <div className="flex justify-center space-x-8 mb-12">
+          <div className="flex  justify-center space-x-8 mb-12">
             <img src={html} alt="html" className="w-12 h-12" />
             <img src={css} alt="Css" className="w-12 h-12" />
             <img src={JavaScript} alt="JavaScript" className="w-12 h-12" />
             <img src={react} alt="React" className="w-12 h-12" />
-            <img src={Java} alt="Java" className="w-12 h-12" />
           </div>
           {/* Second Row */}
-          <div className="flex justify-center space-x-6">
+          <div className="flex  justify-center space-x-6 mb-12">
+            <img src={Java} alt="Java" className="w-12 h-12" />
             <img src={Tailwind} alt="Tailwind" className="w-12 h-12" />
-            <img src={Node} alt="node" className="w-12 h-12" />
-            <img src={Express} alt="express" className="w-12 h-12" />
             <img src={mongodb} alt="mongodb" className="w-12 h-12" />
+            <img src={Node} alt="node" className="w-12 h-12" />
+          </div>
+          <div className="flex  justify-center space-x-6">
+          <img src={Express} alt="express" className="w-12 h-12" />
             <img src={mysql} alt="mysql" className="w-12 h-12" />
             <img src={git} alt="git" className="w-12 h-12" />
           </div>
