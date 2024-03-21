@@ -10,7 +10,7 @@ const ContactForm = () => {
       <div className="w-80 border shadow-lg shadow-current items-center justify-center space-y-6 rounded-lg p-6">
         <div className="flex items-center space-x-2">
           <HiOutlineLocationMarker className="w-6 h-6 mr-2 text-blue-500" />
-          <a href="map" className="text-lg">Jalgaon, Maharashtra, India</a>
+          <a className="text-lg">Jalgaon, Maharashtra, India</a>
         </div>
         <div className="flex items-center space-x-2">
           <HiOutlineMail className="w-6 h-6 mr-2 text-blue-500" />
@@ -18,7 +18,7 @@ const ContactForm = () => {
         </div>
         <div className="flex items-center space-x-2">
           <HiOutlinePhone className="w-6 h-6 mb-6 mr-2 text-blue-500" />
-          <a href="tel:+919172137731" className="text-lg mb-6">+91 9172137731</a>
+          <a className="text-lg mb-6">+91 9172137731</a>
         </div>
       </div>
       <div className='mt-14 mb-20'>
