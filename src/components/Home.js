@@ -7,7 +7,7 @@ import Contact from './Contact'
 const Home = () => {
   return (
     <div>
-      <div className="container text-white mx-auto mt-32 flex flex-col md:flex-row items-center justify-center md:justify-center">
+      <div className="container text-black mx-auto mt-20 flex flex-col md:flex-row items-center justify-center md:justify-center">
         <div className="text-center md:text-left mb-8 md:mb-0 md:p-20">
           <h2 className="text-3xl font-bold mb-4">
             <div className="animate-shake inline-block">&#x1F44B;</div> Hello, I'M HEMANT

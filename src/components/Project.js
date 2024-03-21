@@ -14,7 +14,7 @@ const ProjectsPage = () => {
   
   return (
     <>
-      <div className="text-white mb-20 mt-28">
+      <div className="text-black mb-20 mt-28">
         <div className="mb-20">
         <p className="text-sm  text-center">My Recent Works</p>
           <h2 className="text-4xl text-center font-bold">Projects 💻 </h2>

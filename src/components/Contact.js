@@ -4,7 +4,7 @@ import { SiGithub, SiInstagram, SiLinkedin } from 'react-icons/si';
 
 const ContactForm = () => {
   return (
-    <div className="container text-center text-white mx-auto mt-24 flex flex-col items-center justify-center">
+    <div className="container text-center text-black mx-auto mt-24 flex flex-col items-center justify-center">
       <h2 className="text-4xl font-bold mb-8">Get in touch 🤝</h2>
       <h3 className="font-bold italic text-2xl mb-12">Love to hear from you, Get in touch 👋</h3>
       <div className="w-80 border shadow-lg shadow-current items-center justify-center space-y-6 rounded-lg p-6">

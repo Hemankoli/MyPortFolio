@@ -6,7 +6,7 @@ import Logo from '../images/LOGO1.png'
 const Header = () => {
 
   return (
-    <header className="text-white mx-auto text-center mt-12">
+    <header className=" mx-auto  text-center mt-12">
       <div>
         <Link to={"/"}>
           <img src={Logo} alt="logo"  className='w-80 h-24'/>

@@ -16,7 +16,7 @@ import git from '../images/git.png'
 
 const About = () => {
   return (
-    <div className="container text-white mt-20 mx-auto py-10">  
+    <div className="container text-black mt-20 mx-auto py-10">  
       <p className="text-sm  text-center">Get To Know More</p>
       <h1 className="text-4xl font-bold text-center mt-4 mb-12">About Me 🧐</h1>
       <div className="flex flex-col md:flex-col items-center justify-between">
@@ -24,7 +24,7 @@ const About = () => {
           <img src={profile} alt="profile" className="w-40 h-40 md:w-64 md:h-64 rounded-full object-cover mx-auto md:mx-0" />
         </div>
         <div className="text-lg mx-4 text-center md:w-3/4 md:ml-8">
-          <p className="mb-4">
+        <p className="mb-4" style={{ maxWidth: '500px', margin: '0 auto' }}>
             A MERN stack developer is a skilled professional proficient in using the MERN
             (MongoDB, Express.js, React, Node.js) technology stack for web development.
             I specialize in building robust and dynamic web applications, leveraging MongoDB
