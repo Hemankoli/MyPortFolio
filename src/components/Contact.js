@@ -1,9 +1,7 @@
 import React from 'react';
 import { HiOutlineLocationMarker, HiOutlineMail, HiOutlinePhone } from 'react-icons/hi';
 import { SiGithub, SiInstagram, SiLinkedin } from 'react-icons/si';
-import About from './About'
-import Project  from './Project';
-import Contact from './Contact'
+
 
 const ContactForm = () => {
   return (
