@@ -1,19 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Project';
-import Contact from './components/Contact'
+import Contact from './components/Contact';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <Router>
-      <div className="flex bg-customBlue flex-col min-h-screen">
+      <div>
         <Header />
-        <main className="flex-grow">
+        <main>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" exact element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/project" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />

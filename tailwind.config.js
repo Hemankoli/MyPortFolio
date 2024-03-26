@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        customBlue: 'rgb(255,255, 255)', // Define your custom color
+        primarycolor: "#8873ef",
+        headingcolor: "#0881e21",
+        textcolor: "#193256"
       },
     },
   },  
