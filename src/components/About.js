@@ -18,49 +18,43 @@ import educational from '../images/educatio.png'
 const About = () => {
 
   return (
-    <div className="container text-black mt-20 mx-auto py-10">  
-      <p className="text-sm  text-center">Get To Know More</p>
-      <h1 className="text-4xl font-bold text-center mt-4 text-purple-500 mb-12">— About Me 🧐</h1>
-      <div className="flex flex-col md:flex-col items-center justify-between">
-        <div className="mb-8 md:mb-8">
-          <img src={profile} alt="profile" className="w-40 h-40 md:w-64 md:h-64 rounded-full object-cover mx-auto md:mx-0" />
-        </div>
-        <div className="text-lg mx-4 text-center md:w-3/4 md:ml-8">
-        <p className="mb-4" style={{ maxWidth: '500px', margin: '0 auto' }}>
-            A MERN stack developer is a skilled professional proficient in using the MERN
-            (MongoDB, Express.js, React, Node.js) technology stack for web development.
-            I specialize in building robust and dynamic web applications, leveraging MongoDB
-            for database management, Express.js for server-side development, React for creating
-            interactive user interfaces, and Node.js for server-side scripting.
-          </p>
-        </div>
+    <div className="text-black mt-20 mx-auto max-w-4xl px-4"> {/* Set max width and padding for mobile */}
+    <p className="text-sm text-center">Get To Know More</p>
+    <h1 className="text-4xl font-bold text-center mt-4 text-purple-500 mb-12">— About Me 🧐</h1>
+    <div className="flex flex-col items-center justify-between" data-aos="fade-up" data-aos-deley="150" data-aos-duration="2000">
+      <div className="mb-8">
+        <img src={profile} alt="profile" className="w-40 h-40 md:w-64 md:h-64 rounded-full object-cover mx-auto" />
       </div>
+      <div className="text-lg mx-4 text-center w-full max-w-md">
+        <p className="mb-4">
+          A MERN stack developer is a skilled professional proficient in using the MERN
+          (MongoDB, Express.js, React, Node.js) technology stack for web development.
+          I specialize in building robust and dynamic web applications, leveraging MongoDB
+          for database management, Express.js for server-side development, React for creating
+          interactive user interfaces, and Node.js for server-side scripting.
+        </p>
+      </div>
+    </div>
 
-      <div className="text-center mt-20">
-        <div className="mb-20">
-          <h2 className="text-2xl text-red-400 font-bold italic">Skills ⚡</h2>
-        </div>
-        <div className="md:flex justify-center md:space-x-10">
-          <div className="flex  justify-center space-x-8 mb-12">
-            <img src={html} alt="html" className="w-12 h-12 border  rounded p-2  border-purple-600 " />
-            <img src={css} alt="Css" className="w-12 h-12 border  rounded p-2  border-purple-600" />
-            <img src={JavaScript} alt="JavaScript" className="w-12 h-12 border  rounded p-2  border-purple-600" />
-            <img src={react} alt="React" className="w-12 h-12 border  rounded p-2  border-purple-600" />
-          </div>
-          {/* Second Row */}
-          <div className="flex  justify-center space-x-8 mb-12">  
-            <img src={Java} alt="Java" className="w-12 h-12 border  rounded p-2  border-purple-600" />
-            <img src={Tailwind} alt="Tailwind" className="w-12 h-12 border  rounded p-2  border-purple-600" />
-            <img src={mongodb} alt="mongodb" className="w-12 h-12 border  rounded p-2  border-purple-600" />
-            <img src={Node} alt="node" className="w-12 h-12 border  rounded p-2  border-purple-600" />
-          </div>
-          <div className="flex  justify-center space-x-8">
-            <img src={Express} alt="express" className="w-12 h-12 border  rounded p-2  border-purple-600" />
-            <img src={mysql} alt="mysql" className="w-12 h-12 border  rounded p-2  border-purple-600" />
-            <img src={git} alt="git" className="w-12 h-12 border  rounded p-2  border-purple-600" />
-          </div>
-        </div>
+    <div className="text-center mt-20">
+      <div className="mb-20">
+        <h2 className="text-2xl text-red-400 font-bold italic">Skills ⚡</h2>
       </div>
+      <div className="flex flex-wrap justify-center gap-8" data-aos="zoom-in" data-aos-deley="150" data-aos-duration="2000">
+        {/* Skills Icons */}
+        <img src={html} alt="html" className="w-12 h-12 border rounded p-2 border-purple-600" />
+        <img src={css} alt="Css" className="w-12 h-12 border rounded p-2 border-purple-600" />
+        <img src={JavaScript} alt="JavaScript" className="w-12 h-12 border rounded p-2 border-purple-600" />
+        <img src={react} alt="React" className="w-12 h-12 border rounded p-2 border-purple-600" />
+        <img src={Java} alt="Java" className="w-12 h-12 border rounded p-2 border-purple-600" />
+        <img src={Tailwind} alt="Tailwind" className="w-12 h-12 border rounded p-2 border-purple-600" />
+        <img src={mongodb} alt="mongodb" className="w-12 h-12 border rounded p-2 border-purple-600" />
+        <img src={Node} alt="node" className="w-12 h-12 border rounded p-2 border-purple-600" />
+        <img src={Express} alt="express" className="w-12 h-12 border rounded p-2 border-purple-600" />
+        <img src={mysql} alt="mysql" className="w-12 h-12 border rounded p-2 border-purple-600" />
+        <img src={git} alt="git" className="w-12 h-12 border rounded p-2 border-purple-600" />
+      </div>
+    </div>
 
       {/* Education Section */}
       <div className="text-center mb-20 mt-20">
@@ -73,7 +67,7 @@ const About = () => {
               {/* vertical line */}
               <div className='hidden absolute w-1 sm:block bg-purple-400 h-full left-1/2 transform -translate-x-1/2'></div>
               {/*left card */}
-              <div className='mt-6 sm:mt-0 sm:mb-12'>
+              <div className='mt-6 sm:mt-0 sm:mb-12' data-aos="fade-right" data-aos-deley="300" data-aos-duration="2000">
                 <div className='flex items-center flex-col sm:flex-row'>
                   <div className='flex justify-start w-full mx-auto items-center'>
                     <div className='w-full sm:w-1/2  sm:pr-8'>
@@ -88,13 +82,13 @@ const About = () => {
                   </div>
                   <div className='rounded-full bg-purple-500 border-white border-4 w-10 h-10 absolute left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-4 flex items-center justify-center'>
                     <figure>
-                      <img src={educational} alt=''/>
+                      <img src={educational} alt='' className="w-5 h-5" />
                     </figure>
                   </div>
                 </div>
               </div>
               {/* right card */}
-              <div className='mt-6 sm:mt-0 sm:mb-12'>
+              <div className='mt-6 sm:mt-0 sm:mb-12' data-aos="fade-left" data-aos-deley="300" data-aos-duration="2000">
                 <div className='flex items-center flex-col sm:flex-row'>
                   <div className='flex justify-end w-full mx-auto items-center'>
                     <div className='w-full sm:w-1/2 sm:pl-8'>
@@ -110,13 +104,13 @@ const About = () => {
                   </div>
                   <div className='rounded-full bg-purple-500 border-white border-4 w-10 h-10 absolute left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-4 flex items-center justify-center'>
                     <figure>
-                      <img src={educational} alt=''/>
+                      <img src={educational} alt='' className="w-5 h-5" />
                     </figure>
                   </div>
                 </div>
               </div>
-              {/* left card */}
-              <div className='mt-6 sm:mt-0 sm:mb-12'>
+              {/* left card */} 
+              <div className='mt-6 sm:mt-0 sm:mb-12' data-aos="fade-right" data-aos-deley="300" data-aos-duration="2000">
                 <div className='flex items-center flex-col sm:flex-row'>
                   <div className='flex justify-start w-full mx-auto items-center'>
                     <div className='w-full sm:w-1/2 sm:pr-8'>
@@ -132,7 +126,7 @@ const About = () => {
                   </div>
                   <div className='rounded-full bg-purple-500 border-white border-4 w-10 h-10 absolute left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-4 flex items-center justify-center'>
                     <figure>
-                      <img src={educational} alt=''/>
+                      <img src={educational} alt='' className="w-5 h-5" />
                     </figure>
                   </div>
                 </div>
@@ -154,66 +148,58 @@ const About = () => {
               {/* vertical line */}
               <div className='hidden absolute w-1 sm:block bg-purple-400 h-full left-1/2 transform -translate-x-1/2'></div>
               {/*left card */}
-              <div className='mt-6 sm:mt-0 sm:mb-12'>
+              <div className='mt-6 sm:mt-0 sm:mb-12' data-aos="fade-right" data-aos-deley="100" data-aos-duration="2000">
                 <div className='flex items-center flex-col sm:flex-row'>
                   <div className='flex justify-start w-full mx-auto items-center'>
                     <div className='w-full sm:w-1/2 sm:pr-8'>
                       <div  className='bg-white p-4 rounded shadow group hover:bg-purple-500 cursor-pointer ease-in duration-150'>
                         <h2 className='text-purple-500 font-bold mb-3 group-hover:text-white group-hover:font-semibold text-2xl'>Frontend Developer</h2>
                         <h4 className="text-lg font-bold group-hover:text-white group-hover:font-semibold mb-4">Experience :- 1 Year +</h4>
-                        {/* <p className='text-sm text-gray-700 group-hover:text-white group-hover:font-normal'>
-                          I completed my B.Tech degree in the field of Electronics and Telecommunication Engineering (ENTC) with 8.03 CGPA.
-                        </p> */}
+                       
                       </div>
                     </div>
                   </div>
                   <div className='rounded-full bg-purple-500 border-white border-4 w-10 h-10 absolute left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-4 flex items-center justify-center'>
                     <figure>
-                      <img src="https://cdn-icons-png.flaticon.com/512/4387/4387887.png" alt=''/>
+                      <img src="https://cdn-icons-png.flaticon.com/512/4387/4387887.png" alt='' className='w-5 h-5'/>
                     </figure>
                   </div>
                 </div>
               </div>
               {/* right card */}
-              <div className='mt-6 sm:mt-0 sm:mb-12'>
+              <div className='mt-6 sm:mt-0 sm:mb-12' data-aos="fade-left" data-aos-deley="100" data-aos-duration="2000">
                 <div className='flex items-center flex-col sm:flex-row'>
                   <div className='flex justify-end w-full mx-auto items-center'>
                     <div className='w-full sm:w-1/2 sm:pl-8'>
                       <div  className='bg-white p-4 rounded shadow group hover:bg-purple-500 cursor-pointer ease-in duration-150'>
                         <h2 className='text-purple-500 font-bold mb-3 group-hover:text-white group-hover:font-semibold text-2xl'>Backend Developer</h2>
                         <h4 className="text-lg font-bold group-hover:text-white group-hover:font-semibold mb-4">Experience :- 3 Months +</h4>
-                        {/* <p className='text-sm text-gray-700 group-hover:text-white group-hover:font-normal'>
-                        I completed my Higher Secondary Certificate (HSC) in 2019 in the Science stream,
-                        achieving a commendable 64.15% percentage.                        
-                        </p> */}
+                        
                       </div>
                     </div>
                   </div>
                   <div className='rounded-full bg-purple-500 border-white border-4 w-10 h-10 absolute left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-4 flex items-center justify-center'>
                     <figure>
-                      <img src="https://cdn-icons-png.flaticon.com/512/4387/4387887.png" alt=''/>
+                      <img src="https://cdn-icons-png.flaticon.com/512/4387/4387887.png" alt='' className='w-5 h-5'/>
                     </figure>
                   </div>
                 </div>
               </div>
               {/* left card */}
-              <div className='mt-6 sm:mt-0 sm:mb-12'>
+              <div className='mt-6 sm:mt-0 sm:mb-12' data-aos="fade-right" data-aos-deley="100" data-aos-duration="2000">
                 <div className='flex items-center flex-col sm:flex-row'>
                   <div className='flex justify-start w-full mx-auto items-center'>
                     <div className='w-full sm:w-1/2 sm:pr-8'>
                       <div  className='bg-white p-4 rounded shadow group hover:bg-purple-500 cursor-pointer ease-in duration-150'>
                         <h2 className='text-purple-500 font-bold mb-3 group-hover:text-white group-hover:font-semibold text-2xl'>MERN Stack Developer</h2>
                         <h4 className="text-lg font-bold group-hover:text-white group-hover:font-semibold mb-4">EXP :- 1 Months + </h4>
-                        {/* <p className='text-sm text-gray-700 group-hover:text-white group-hover:font-normal'>
-                        I successfully completed my SSC (Secondary School Certificate) in 2017, specializing
-                        in the science stream. I am proud to have achieved an impressive percentage of 83.80%.                        
-                        </p> */}
+                        
                       </div>
                     </div>
                   </div>
                   <div className='rounded-full bg-purple-500 border-white border-4 w-10 h-10 absolute left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-4 flex items-center justify-center'>
                     <figure>
-                      <img src="https://cdn-icons-png.flaticon.com/512/4387/4387887.png" alt=''/>
+                      <img src="https://cdn-icons-png.flaticon.com/512/4387/4387887.png" alt='' className='w-5 h-5'/>
                     </figure>
                   </div>
                 </div>

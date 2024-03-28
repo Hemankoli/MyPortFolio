@@ -5,12 +5,12 @@ import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Project';
 import Contact from './components/Contact';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 function App() {
   useEffect(() => {
-    Aos.init();
+    AOS.init();
   }, []);
 
   return (

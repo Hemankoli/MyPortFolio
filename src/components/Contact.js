@@ -6,10 +6,14 @@ import { SiGithub, SiInstagram, SiLinkedin } from 'react-icons/si';
 const ContactForm = () => {
   return (
     <section id='contact'>
-    <div className="container text-center text-black mx-auto mt-24 flex flex-col items-center justify-center">
+    <div className="container text-center text-black mx-auto mt-24  md:mb-28 mb-0  flex flex-col items-center justify-center">
       <h2 className="text-4xl font-bold text-purple-500 mb-8">— Get in touch 🤝</h2>
       <h3 className="font-bold italic text-2xl mb-12">Love to hear from you, Get in touch 👋</h3>
-      <div className="w-80 border shadow-lg shadow-purple-500 items-center justify-center space-y-6 rounded-lg p-6">
+      <div className="w-80 border shadow-lg shadow-purple-500 items-center justify-center space-y-6 rounded-lg p-6"
+      data-aos="zoom-in"
+      data-aos-delay="100"
+      data-aos-duration="2000"
+      >
         <div className="flex items-center space-x-2">
           <HiOutlineLocationMarker className="w-6 h-6 mr-2 text-blue-500" />
           <p className="text-lg">Jalgaon, Maharashtra, India</p>

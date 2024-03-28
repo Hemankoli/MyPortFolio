@@ -8,7 +8,7 @@ const Project = () => {
   const [port, setPort] = useState([]);
   const [selectTab, setSelectTab] = useState('all');
   const [showModel, setShowModel] = useState(false);
-  const [activeID, setActiveID] = useState(null); // Initialize activeID with null
+  const [activeID, setActiveID] = useState(null);
 
   const loadMore = () => {
     setNextItem(prev => prev + 3);
@@ -17,7 +17,7 @@ const Project = () => {
   const showModelHandler = id => {
     setShowModel(true);
     setActiveID(id);
-  };
+  };  
 
   useEffect(() => {
     setPort(projectsData);
@@ -38,12 +38,12 @@ const Project = () => {
   return (
     <section>
       <div>
-        <div className="text-black flex flex-wrap items-center justify-center mt-6 md:mt-24 md:mx-96"> {/* Centering the content */}
-          <div className="mb-8 sm:mb-0 text-center"> {/* Centering the text */}
+        <div className="text-black flex flex-wrap items-center justify-center mt-6 md:mt-24 md:mx-96">
+          <div className="mb-8 sm:mb-0 text-center">
             <p className="text-sm">My Recent Works</p>
             <h2 className="text-4xl text-purple-500 font-bold mb-4">— Projects 💻</h2>
           </div>
-          <div className='flex mx-auto gap-3'>
+          <div className='flex mx-auto gap-3' data-aos="zoom-in" data-aos-delay="150" data-aos-duration="2000">
             <button onClick={() => setSelectTab('all')} className='text-red-400 border border-solid border-blue-400 py-2 px-4 rounded-[8px]'>
               All
             </button>
@@ -55,15 +55,15 @@ const Project = () => {
             </button>
           </div>
         </div>
-        <div className='flex md:w-[700px] items-center gap-6 mt-10 mx-4 md:mx-auto flex-wrap justify-center'> {/* Centering the project items */}
+        <div className='flex md:w-[700px] items-center gap-6 mt-10 mx-4 md:mx-auto flex-wrap justify-center' data-aos="zoom-in">
           {port.slice(0, nextItem).map((project) => (
             <div key={project.id}
-              projects-aos='fade-zoom-in'
-              projects-aos-delay='50'
-              projects-aos-duration="1000"
-              className="group w-full sm:w-[48%] md:w-[31%] lg:w-[31%] relative z-[1]">
+              className="group w-full sm:w-[48%] md:w-[31%] lg:w-[31%] relative z-[1]"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="2000">
               <figure>
-                <img className='rounded-lg border w-80 h-48 md:w-full md:h-44 p-4 bg-purple-300 mx-auto' src={project.imgUrl} alt='' /> {/* Centering the image */}
+                <img className='rounded-lg border w-80 h-48 md:w-full md:h-44 p-4 bg-purple-300 mx-auto' src={project.imgUrl} alt='' />
               </figure>
 
               <div className='w-full h-full bg-purple-500 bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block'>
