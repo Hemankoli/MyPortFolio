@@ -34,7 +34,7 @@ const Header = () => {
             <Link to={"/about"} className="inline-flex items-center text-gray-500 hover:bg-yellow-400  hover:text-black p-2 rounded-lg"> 
               <FcBusinessman className="w-6 h-6 mr-2" /> About
             </Link>
-            <Link to={"/project"} className="inline-flex items-center text-gray-500 hover:bg-green-400 hover:text-black p-2 rounded-lg">
+            <Link to={"/project"} className="inline-flex items-center text-gray-500 hover:bg-orange-400 hover:text-black p-2 rounded-lg">
               <FcBookmark className="w-6 h-6 mr-2" /> Projects
             </Link>
             <Link to={"/resume"} className="inline-flex items-center text-gray-500 hover:bg-purple-400 hover:text-black p-2 rounded-lg">
@@ -65,7 +65,7 @@ const Header = () => {
               <Link to={"/about"} onClick={closeMenu} className="flex items-center text-gray-500 hover:bg-yellow-400 hover:text-black p-2 rounded-lg mb-4 text-center text-lg">
                 <FcBusinessman className="w-6 h-6 mr-2" /> About
               </Link>
-              <Link to={"/project"} onClick={closeMenu} className="flex items-center text-gray-500 hover:bg-green-400 hover:text-black p-2 rounded-lg mb-4 text-center text-lg">
+              <Link to={"/project"} onClick={closeMenu} className="flex items-center text-gray-500 hover:bg-orange-400 hover:text-black p-2 rounded-lg mb-4 text-center text-lg">
                 <FcBookmark className="w-6 h-6 mr-2" /> Projects
               </Link>
               <Link to={"/resume"} onClick={closeMenu} className="flex items-center text-gray-500 hover:bg-purple-400 hover:text-black p-2 rounded-lg mb-4 text-center text-lg">

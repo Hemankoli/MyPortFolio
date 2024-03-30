@@ -26,7 +26,7 @@ const About = () => {
         <div className="mb-8 md:mb-0">
           <img src={profile} alt="profile" className="w-40 h-40 md:w-64 md:h-64 rounded-md object-cover mx-auto" />
         </div>
-        <div className="text-lg mx-4 w-full max-w-lg">
+        <div className="text-lg mx-4 text-center w-full max-w-xl">
           <p className="mb-4 font-mono">
             <span className='text-red-400 font-semibold text-xl'>A MERN stack developer </span> is a skilled professional proficient in using the <span className='text-purple-400 italic underline'> MERN
             (MongoDB, Express.js, React, Node.js)</span> technology stack for web development.
@@ -35,6 +35,7 @@ const About = () => {
             interactive user interfaces, and Node.js for server-side scripting. </span>
           </p>
         </div>
+
       </div>
 
       <div className="text-center mt-20">
@@ -75,7 +76,7 @@ const About = () => {
                     <div className='w-full py-3 px-2  sm:max-w-xl sm:mx-auto sm:px-0 bg-white p-4 rounded shadow group hover:bg-purple-500 cursor-pointer ease-in duration-150'>
                         <h2 className='text-purple-500 font-bold mb-3 group-hover:text-white group-hover:font-semibold text-2xl'>Bachelor's of Technology Degree</h2>
                         <h4 className="text-lg font-bold group-hover:text-white group-hover:font-semibold mb-4">(2019 - 2023)</h4>
-                        <p className='text-sm text-gray-700 group-hover:text-white group-hover:font-normal'>
+                        <p className='text-sm text-gray-700    group-hover:text-white group-hover:font-normal'>
                           I completed my B.Tech degree in the field of Electronics and Telecommunication Engineering (ENTC) with 8.03 CGPA.
                         </p>
                       </div>
