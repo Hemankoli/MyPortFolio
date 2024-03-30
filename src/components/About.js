@@ -1,4 +1,3 @@
-
 import React from 'react';
 import profile from '../images/logo.jpeg';
 import html from '../images/html.png'
@@ -18,43 +17,44 @@ import educational from '../images/educatio.png'
 const About = () => {
 
   return (
-    <div className="text-black mt-20 mx-auto max-w-4xl px-4"> {/* Set max width and padding for mobile */}
-    <p className="text-sm text-center">Get To Know More</p>
-    <h1 className="text-4xl font-bold text-center mt-4 text-purple-500 mb-12">— About Me 🧐</h1>
-    <div className="flex flex-col items-center justify-between" data-aos="fade-up" data-aos-deley="150" data-aos-duration="2000">
-      <div className="mb-8">
-        <img src={profile} alt="profile" className="w-40 h-40 md:w-64 md:h-64 rounded-full object-cover mx-auto" />
-      </div>
-      <div className="text-lg mx-4 text-center w-full max-w-md">
-        <p className="mb-4">
-          A MERN stack developer is a skilled professional proficient in using the MERN
-          (MongoDB, Express.js, React, Node.js) technology stack for web development.
-          I specialize in building robust and dynamic web applications, leveraging MongoDB
-          for database management, Express.js for server-side development, React for creating
-          interactive user interfaces, and Node.js for server-side scripting.
-        </p>
-      </div>
-    </div>
+    <div className="text-black mt-20 md:mt-40 mb-28 mx-auto px-4">
+      <p className="text-sm text-center">Get To Know More</p>
+      <h1 className="text-4xl font-bold text-center mt-4 text-purple-500 mb-12">— Know Who <span className='text-red-400'>I'M</span> 🧐</h1>
 
-    <div className="text-center mt-20">
-      <div className="mb-20">
-        <h2 className="text-2xl text-red-400 font-bold italic">Skills ⚡</h2>
+      <div className="flex flex-col md:flex-row items-center justify-center space-x-0 md:space-x-40 mt-10 md:mt-20 mb-8">
+        <div className="mb-8 md:mb-0">
+          <img src={profile} alt="profile" className="w-40 h-40 md:w-64 md:h-64 rounded-md object-cover mx-auto" />
+        </div>
+        <div className="text-lg mx-4 w-full max-w-lg">
+          <p className="mb-4 font-mono">
+            <span className='text-red-400 font-semibold text-xl'>A MERN stack developer </span> is a skilled professional proficient in using the <span className='text-purple-400 italic underline'> MERN
+            (MongoDB, Express.js, React, Node.js)</span> technology stack for web development.
+            I specialize in building robust and dynamic web applications, leveraging MongoDB
+            for database management,<span className='text-purple-400 italic underline'> Express.js for server-side development, React for creating
+            interactive user interfaces, and Node.js for server-side scripting. </span>
+          </p>
+        </div>
       </div>
-      <div className="flex flex-wrap justify-center gap-8" data-aos="zoom-in" data-aos-deley="150" data-aos-duration="2000">
-        {/* Skills Icons */}
-        <img src={html} alt="html" className="w-12 h-12 border rounded p-2 border-purple-600" />
-        <img src={css} alt="Css" className="w-12 h-12 border rounded p-2 border-purple-600" />
-        <img src={JavaScript} alt="JavaScript" className="w-12 h-12 border rounded p-2 border-purple-600" />
-        <img src={react} alt="React" className="w-12 h-12 border rounded p-2 border-purple-600" />
-        <img src={Java} alt="Java" className="w-12 h-12 border rounded p-2 border-purple-600" />
-        <img src={Tailwind} alt="Tailwind" className="w-12 h-12 border rounded p-2 border-purple-600" />
-        <img src={mongodb} alt="mongodb" className="w-12 h-12 border rounded p-2 border-purple-600" />
-        <img src={Node} alt="node" className="w-12 h-12 border rounded p-2 border-purple-600" />
-        <img src={Express} alt="express" className="w-12 h-12 border rounded p-2 border-purple-600" />
-        <img src={mysql} alt="mysql" className="w-12 h-12 border rounded p-2 border-purple-600" />
-        <img src={git} alt="git" className="w-12 h-12 border rounded p-2 border-purple-600" />
+
+      <div className="text-center mt-20">
+        <div className="mb-20">
+          <h2 className="text-2xl text-red-400 font-bold italic">Skills ⚡</h2>
+        </div>
+        <div className="flex flex-wrap justify-center gap-12" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="2000">
+          {/* Skills Icons */}
+          <img src={html} alt="html" className="w-12 h-12 border rounded p-2 border-purple-600" />
+          <img src={css} alt="Css" className="w-12 h-12 border rounded p-2 border-purple-600" />
+          <img src={JavaScript} alt="JavaScript" className="w-12 h-12 border rounded p-2 border-purple-600" />
+          <img src={react} alt="React" className="w-12 h-12 border rounded p-2 border-purple-600" />
+          <img src={Java} alt="Java" className="w-12 h-12 border rounded p-2 border-purple-600" />
+          <img src={Tailwind} alt="Tailwind" className="w-12 h-12 border rounded p-2 border-purple-600" />
+          <img src={mongodb} alt="mongodb" className="w-12 h-12 border rounded p-2 border-purple-600" />
+          <img src={Node} alt="node" className="w-12 h-12 border rounded p-2 border-purple-600" />
+          <img src={Express} alt="express" className="w-12 h-12 border rounded p-2 border-purple-600" />
+          <img src={mysql} alt="mysql" className="w-12 h-12 border rounded p-2 border-purple-600" />
+          <img src={git} alt="git" className="w-12 h-12 border rounded p-2 border-purple-600" />
+        </div>
       </div>
-    </div>
 
       {/* Education Section */}
       <div className="text-center mb-20 mt-20">
@@ -71,7 +71,7 @@ const About = () => {
                 <div className='flex items-center flex-col sm:flex-row'>
                   <div className='flex justify-start w-full mx-auto items-center'>
                     <div className='w-full sm:w-1/2  sm:pr-8'>
-                      <div  className='bg-white p-4 rounded shadow group hover:bg-purple-500 cursor-pointer ease-in duration-150'>
+                    <div className='w-full py-3 px-2 sm:max-w-xl sm:mx-auto sm:px-0 bg-white p-4 rounded shadow group hover:bg-purple-500 cursor-pointer ease-in duration-150'>
                         <h2 className='text-purple-500 font-bold mb-3 group-hover:text-white group-hover:font-semibold text-2xl'>Bachelor's of Technology Degree</h2>
                         <h4 className="text-lg font-bold group-hover:text-white group-hover:font-semibold mb-4">(2019 - 2023)</h4>
                         <p className='text-sm text-gray-700 group-hover:text-white group-hover:font-normal'>
@@ -92,7 +92,7 @@ const About = () => {
                 <div className='flex items-center flex-col sm:flex-row'>
                   <div className='flex justify-end w-full mx-auto items-center'>
                     <div className='w-full sm:w-1/2 sm:pl-8'>
-                      <div  className='bg-white p-4 rounded shadow group hover:bg-purple-500 cursor-pointer ease-in duration-150'>
+                    <div className='w-full py-3 px-2 sm:max-w-xl sm:mx-auto sm:px-0 bg-white p-4 rounded shadow group hover:bg-purple-500 cursor-pointer ease-in duration-150'>
                         <h2 className='text-purple-500 font-bold mb-3 group-hover:text-white group-hover:font-semibold text-2xl'>Higher Secondary Education (12th)</h2>
                         <h4 className="text-lg font-bold group-hover:text-white group-hover:font-semibold mb-4">(2018 - 2019)</h4>
                         <p className='text-sm text-gray-700 group-hover:text-white group-hover:font-normal'>
@@ -114,7 +114,7 @@ const About = () => {
                 <div className='flex items-center flex-col sm:flex-row'>
                   <div className='flex justify-start w-full mx-auto items-center'>
                     <div className='w-full sm:w-1/2 sm:pr-8'>
-                      <div  className='bg-white p-4 rounded shadow group hover:bg-purple-500 cursor-pointer ease-in duration-150'>
+                    <div className='w-full py-3 px-2 sm:max-w-xl sm:mx-auto sm:px-0 bg-white p-4 rounded shadow group hover:bg-purple-500 cursor-pointer ease-in duration-150'>
                         <h2 className='text-purple-500 font-bold mb-3 group-hover:text-white group-hover:font-semibold text-2xl'>Secondary Education (10th)</h2>
                         <h4 className="text-lg font-bold group-hover:text-white group-hover:font-semibold mb-4">(2016 - 2017)</h4>
                         <p className='text-sm text-gray-700 group-hover:text-white group-hover:font-normal'>
@@ -152,7 +152,7 @@ const About = () => {
                 <div className='flex items-center flex-col sm:flex-row'>
                   <div className='flex justify-start w-full mx-auto items-center'>
                     <div className='w-full sm:w-1/2 sm:pr-8'>
-                      <div  className='bg-white p-4 rounded shadow group hover:bg-purple-500 cursor-pointer ease-in duration-150'>
+                    <div className='w-full py-3 px-2 sm:max-w-xl sm:mx-auto sm:px-0 bg-white p-4 rounded shadow group hover:bg-purple-500 cursor-pointer ease-in duration-150'>
                         <h2 className='text-purple-500 font-bold mb-3 group-hover:text-white group-hover:font-semibold text-2xl'>Frontend Developer</h2>
                         <h4 className="text-lg font-bold group-hover:text-white group-hover:font-semibold mb-4">Experience :- 1 Year +</h4>
                        
@@ -171,7 +171,7 @@ const About = () => {
                 <div className='flex items-center flex-col sm:flex-row'>
                   <div className='flex justify-end w-full mx-auto items-center'>
                     <div className='w-full sm:w-1/2 sm:pl-8'>
-                      <div  className='bg-white p-4 rounded shadow group hover:bg-purple-500 cursor-pointer ease-in duration-150'>
+                    <div className='w-full py-3 px-2 sm:max-w-xl sm:mx-auto sm:px-0 bg-white p-4 rounded shadow group hover:bg-purple-500 cursor-pointer ease-in duration-150'>
                         <h2 className='text-purple-500 font-bold mb-3 group-hover:text-white group-hover:font-semibold text-2xl'>Backend Developer</h2>
                         <h4 className="text-lg font-bold group-hover:text-white group-hover:font-semibold mb-4">Experience :- 3 Months +</h4>
                         
@@ -190,7 +190,7 @@ const About = () => {
                 <div className='flex items-center flex-col sm:flex-row'>
                   <div className='flex justify-start w-full mx-auto items-center'>
                     <div className='w-full sm:w-1/2 sm:pr-8'>
-                      <div  className='bg-white p-4 rounded shadow group hover:bg-purple-500 cursor-pointer ease-in duration-150'>
+                    <div className='w-full py-3 px-2 sm:max-w-xl sm:mx-auto sm:px-0 bg-white p-4 rounded shadow group hover:bg-purple-500 cursor-pointer ease-in duration-150'>
                         <h2 className='text-purple-500 font-bold mb-3 group-hover:text-white group-hover:font-semibold text-2xl'>MERN Stack Developer</h2>
                         <h4 className="text-lg font-bold group-hover:text-white group-hover:font-semibold mb-4">EXP :- 1 Months + </h4>
                         
@@ -213,6 +213,3 @@ const About = () => {
 };
 
 export default About;
-
-
-

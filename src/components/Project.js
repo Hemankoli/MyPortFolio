@@ -37,11 +37,11 @@ const Project = () => {
 
   return (
     <section>
-      <div>
-        <div className="text-black flex flex-wrap items-center justify-center mt-6 md:mt-24 md:mx-96">
+      <div className='py-6'>
+        <div className="text-black flex flex-wrap items-center justify-center mb-28 mt-4 md:mt-40 md:mx-96">
           <div className="mb-8 sm:mb-0 text-center">
-            <p className="text-sm">My Recent Works</p>
-            <h2 className="text-4xl text-purple-500 font-bold mb-4">— Projects 💻</h2>
+            <p className="text-sm">Here are a projects I've worked on recently</p>
+            <h2 className="text-4xl text-purple-500 font-bold mb-4">— My Recent <span className='text-red-400'>Works</span> 💻</h2>
           </div>
           <div className='flex mx-auto gap-3' data-aos="zoom-in" data-aos-delay="150" data-aos-duration="2000">
             <button onClick={() => setSelectTab('all')} className='text-red-400 border border-solid border-blue-400 py-2 px-4 rounded-[8px]'>
@@ -60,8 +60,8 @@ const Project = () => {
             <div key={project.id}
               className="group w-full sm:w-[48%] md:w-[31%] lg:w-[31%] relative z-[1]"
               data-aos="zoom-in"
-              data-aos-delay="100"
-              data-aos-duration="2000">
+              data-aos-delay="50"
+              data-aos-duration="1500">
               <figure>
                 <img className='rounded-lg border w-80 h-48 md:w-full md:h-44 p-4 bg-purple-300 mx-auto' src={project.imgUrl} alt='' />
               </figure>

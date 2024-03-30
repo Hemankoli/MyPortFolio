@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import { HiMenu, HiX, HiOutlinePhone } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
+import { HiMenu, HiX } from 'react-icons/hi';
+import { IoHomeOutline } from 'react-icons/io5';
+import { AiOutlineUser, AiOutlineFundProjectionScreen } from 'react-icons/ai';
+import { RiContactsLine } from 'react-icons/ri';
+import { FaFilePdf } from 'react-icons/fa';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,55 +19,59 @@ const Header = () => {
 
   return (
     <div>
-      <header className="mt-0 shadow-lg fixed top-0 left-0 right-0 z-50 bg-white">
-        <div className='flex items-center justify-between mx-4 md:mx-auto'>
-          <NavLink to={"/"} className='flex items-center px-0 md:px-20 -space-x-4' >
+      <header className="py-2 shadow-lg fixed top-0 left-0 right-0 z-50 bg-white">
+        <div className='flex items-center justify-between mx-4 md:mx-20'>
+          <Link to={"/"} className='flex items-center px-0 md:px-4 space-x-4'>
             <h1 className='text-4xl font-bold text-red-400 px-4 py-2 italic'>
-              P<span className='text-2xl font-bold text-purple-500'>oRtFoLiO.</span>
+              H<span className='text-2xl font-bold text-purple-500'>k.</span>
             </h1>
-          </NavLink>
+          </Link>
 
-          <nav className=" font-[400] space-x-10 text-lg md:block hidden">
-            <NavLink to={"/"} className="text-purple-500 hover:text-purple-500">Home</NavLink>
-            <NavLink to={"/about"} className="text-gray-500 hover:text-purple-500">About</NavLink>
-            <NavLink to={"/project"} className="text-gray-500 hover:text-purple-500">Projects</NavLink>
-            <NavLink to={"/contact"} className="text-gray-500 hover:text-purple-500">Contact</NavLink>
+          {/* Navigation Menu (Tablet and Desktop) */}
+          <nav className="font-[500] space-x-4 text-lg md:block hidden ml-auto"> {/* Added ml-auto to move the navigation to the right */}
+            <Link to={"/"} className="inline-flex items-center text-gray-500 hover:bg-red-400 hover:text-black p-2 rounded-lg">
+              <IoHomeOutline className="w-6 h-6 mr-2" /> Home
+            </Link>
+            <Link to={"/about"} className="inline-flex items-center text-gray-500 hover:bg-yellow-400 hover:text-black p-2 rounded-lg"> 
+              <AiOutlineUser className="w-6 h-6 mr-2" /> About
+            </Link>
+            <Link to={"/project"} className="inline-flex items-center text-gray-500 hover:bg-green-400 hover:text-black p-2 rounded-lg">
+              <AiOutlineFundProjectionScreen className="w-6 h-6 mr-2" /> Projects
+            </Link>
+            <Link to={"/resume"} className="inline-flex items-center text-gray-500 hover:bg-purple-400 hover:text-black p-2 rounded-lg">
+              <FaFilePdf className="w-6 h-6 mr-2" /> Resume
+            </Link>
+            <Link to={"/contact"} className="inline-flex items-center text-gray-500 hover:bg-blue-400 hover:text-black p-2 rounded-lg">
+              <RiContactsLine className="w-6 h-6 mr-2" /> Contact
+            </Link>
           </nav>
-
-
-          <div className="md:block hidden items-center mx-10 justify-center">
-            <div className="flex items-center -space-x-4">
-              <HiOutlinePhone className="w-6 h-6 text-white bg-green-500 p-1 mr-10 rounded-md" />
-              <p className="text-lg text-blue-500 mr-20">(+91) 9172137731</p>
-            </div>
-          </div>
-
-
           {/* Mobile Menu Toggle */}
           <div className="md:hidden">
-            <button onClick={toggleMenu} className="text-gray-500 hover:text-purple-500">
-              {isMenuOpen ? <HiX className="w-6 h-6 " /> : <HiMenu className="w-6 h-6" />}
+            <button onClick={toggleMenu} className="text-purple-500 hover:text-red-500">
+              {isMenuOpen ? <HiX className="w-6 h-6" /> : <HiMenu className="w-6 h-6" />}
             </button>
           </div>
 
           {/* Navigation Menu (Mobile) */}
-          <nav className={`fixed inset-0 bg-white z-20 p-4 transform transition-transform ease-in-out duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+          <nav className={`fixed inset-0 flex flex-col items-center bg-white z-20 p-4 transform transition-transform ease-in-out duration-300 ${isMenuOpen ? 'translate-x-0' : '-translate-y-full'}`}>
             <div className="flex justify-end">
-              <button onClick={toggleMenu} className="text-gray-500 hover:text-purple-500">
-                <HiX className="w-6 h-6" />
+              <button onClick={toggleMenu} className="text-gray-500 hover:text-purple-500 absolute top-4 right-4">
+                {isMenuOpen ? <HiX className="w-6 h-6" /> : <HiMenu className="w-6 h-6" />}
               </button>
             </div>
-            <div className="flex flex-col mt-8">
-              <NavLink to={"/"} onClick={closeMenu} className="text-gray-500 hover:text-purple-500 mb-4 text-center text-lg">Home</NavLink>
-              <NavLink to={"/about"} onClick={closeMenu} className="text-gray-500 hover:text-purple-500 mb-4 text-center text-lg">About</NavLink>
-              <NavLink to={"/project"} onClick={closeMenu} className="text-gray-500 hover:text-purple-500 mb-4 text-center text-lg">Projects</NavLink>
-              <NavLink to={"/contact"} onClick={closeMenu} className="text-gray-500 hover:text-purple-500 mb-4 text-center text-lg">Contact</NavLink>
-              
-              {/* Phone Icon and Number */}
-              <div className="flex items-center justify-center">
-              <HiOutlinePhone className="w-6 h-6 text-white bg-green-500 p-1 rounded-md" />
-                <p className="text-lg text-blue-500 ml-2">+91 9172137731</p>
-              </div>
+            <div className="flex font-[500] flex-col mt-8">
+              <Link to={"/"} onClick={closeMenu} className="flex items-center text-gray-500 hover:bg-red-400 hover:text-black p-2 rounded-lg mb-4 text-center text-lg">
+                <IoHomeOutline className="w-6 h-6 mr-2" /> Home
+              </Link>
+              <Link to={"/about"} onClick={closeMenu} className="flex items-center text-gray-500 hover:bg-yellow-400 hover:text-black p-2 rounded-lg mb-4 text-center text-lg">
+                <AiOutlineUser className="w-6 h-6 mr-2" /> About
+              </Link>
+              <Link to={"/project"} onClick={closeMenu} className="flex items-center text-gray-500 hover:bg-green-400 hover:text-black p-2 rounded-lg mb-4 text-center text-lg">
+                <AiOutlineFundProjectionScreen className="w-6 h-6 mr-2" /> Projects
+              </Link>
+              <Link to={"/contact"} onClick={closeMenu} className="flex items-center text-gray-500 hover:bg-blue-400 hover:text-black p-2 rounded-lg mb-4 text-center text-lg">
+                <RiContactsLine className="w-6 h-6 mr-2" /> Contact
+              </Link>
             </div>
           </nav>
         </div>
