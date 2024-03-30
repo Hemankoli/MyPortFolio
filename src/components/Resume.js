@@ -11,7 +11,6 @@ const Resume = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
       <div className="container mx-auto text-center">
-        <h1 className="text-3xl font-bold mb-4">Resume</h1>
         <p className="mb-4">Click the button below to view/download the resume PDF:</p>
         <button
           onClick={toggleResume}

@@ -14,6 +14,7 @@ import git from '../images/git.png'
 import educational from '../images/educatio.png'
 
 
+
 const About = () => {
 
   return (
@@ -41,19 +42,19 @@ const About = () => {
           <h2 className="text-2xl text-red-400 font-bold italic">Skills ⚡</h2>
         </div>
         <div className="flex flex-wrap justify-center gap-12" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="2000">
-          {/* Skills Icons */}
-          <img src={html} alt="html" className="w-12 h-12 border rounded p-2 border-purple-600" />
-          <img src={css} alt="Css" className="w-12 h-12 border rounded p-2 border-purple-600" />
-          <img src={JavaScript} alt="JavaScript" className="w-12 h-12 border rounded p-2 border-purple-600" />
-          <img src={react} alt="React" className="w-12 h-12 border rounded p-2 border-purple-600" />
-          <img src={Java} alt="Java" className="w-12 h-12 border rounded p-2 border-purple-600" />
-          <img src={Tailwind} alt="Tailwind" className="w-12 h-12 border rounded p-2 border-purple-600" />
-          <img src={mongodb} alt="mongodb" className="w-12 h-12 border rounded p-2 border-purple-600" />
-          <img src={Node} alt="node" className="w-12 h-12 border rounded p-2 border-purple-600" />
-          <img src={Express} alt="express" className="w-12 h-12 border rounded p-2 border-purple-600" />
-          <img src={mysql} alt="mysql" className="w-12 h-12 border rounded p-2 border-purple-600" />
-          <img src={git} alt="git" className="w-12 h-12 border rounded p-2 border-purple-600" />
-        </div>
+      {/* Skills Icons */}
+      <img src={html} alt="html" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+      <img src={css} alt="Css" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+      <img src={JavaScript} alt="JavaScript" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+      <img src={react} alt="React" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+      <img src={Java} alt="Java" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+      <img src={Tailwind} alt="Tailwind" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+      <img src={mongodb} alt="mongodb" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+      <img src={Node} alt="node" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+      <img src={Express} alt="express" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+      <img src={mysql} alt="mysql" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+      <img src={git} alt="git" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+    </div>  
       </div>
 
       {/* Education Section */}
@@ -67,11 +68,11 @@ const About = () => {
               {/* vertical line */}
               <div className='hidden absolute w-1 sm:block bg-purple-400 h-full left-1/2 transform -translate-x-1/2'></div>
               {/*left card */}
-              <div className='mt-6 sm:mt-0 sm:mb-12' data-aos="fade-right" data-aos-deley="300" data-aos-duration="2000">
+              <div className='mt-6 sm:mt-0 sm:mb-12 ' data-aos="fade-right" data-aos-deley="300" data-aos-duration="2000">
                 <div className='flex items-center flex-col sm:flex-row'>
                   <div className='flex justify-start w-full mx-auto items-center'>
                     <div className='w-full sm:w-1/2  sm:pr-8'>
-                    <div className='w-full py-3 px-2 sm:max-w-xl sm:mx-auto sm:px-0 bg-white p-4 rounded shadow group hover:bg-purple-500 cursor-pointer ease-in duration-150'>
+                    <div className='w-full py-3 px-2  sm:max-w-xl sm:mx-auto sm:px-0 bg-white p-4 rounded shadow group hover:bg-purple-500 cursor-pointer ease-in duration-150'>
                         <h2 className='text-purple-500 font-bold mb-3 group-hover:text-white group-hover:font-semibold text-2xl'>Bachelor's of Technology Degree</h2>
                         <h4 className="text-lg font-bold group-hover:text-white group-hover:font-semibold mb-4">(2019 - 2023)</h4>
                         <p className='text-sm text-gray-700 group-hover:text-white group-hover:font-normal'>

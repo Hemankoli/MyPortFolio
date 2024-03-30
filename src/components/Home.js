@@ -3,8 +3,11 @@ import About from './About';
 import Project from './Project';
 import Contact from './Contact';
 import home from "../images/home-main.svg"
-import { SiGithub, SiInstagram, SiLinkedin } from 'react-icons/si';
 import Type from './Type.js'
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { FaSquareInstagram } from "react-icons/fa6";
+
+
 
 
 const Home = () => {
@@ -52,9 +55,9 @@ const Home = () => {
     <div className='mt-20 mb-10'>
       <h1 className='text-4xl text-center font-[500] mb-10 mt-10'><span className='text-purple-500'>CONNECT</span> TO ME</h1>
         <div className='items-center justify-center mx-auto flex space-x-4'>
-          <a className='border p-4 rounded-full bg-purple-400' href='https://www.linkedin.com/in/hemant-koli-530080203/'><SiLinkedin /></a>
-          <a className='border p-4 rounded-full bg-purple-400' href='https://github.com/Hemankoli'><SiGithub /></a>
-          <a className='border p-4 rounded-full bg-purple-400' href='https://www.instagram.com/kl_hmt_07/'><SiInstagram /></a>
+          <a className=' shadow-md shadow-red-400 p-4 rounded-full transition duration-200 ease-in-out transform hover:scale-110 text-blue-700 bg-purple-400' href='https://www.linkedin.com/in/hemant-koli-530080203/'><FaLinkedin /></a>
+          <a className=' shadow-md shadow-red-400 p-4 rounded-full transition duration-200 ease-in-out transform hover:scale-110 bg-purple-400' href='https://github.com/Hemankoli'><FaGithubSquare /></a>
+          <a className=' shadow-md shadow-red-400 p-4 rounded-full transition duration-200 ease-in-out transform hover:scale-110 text-red-600 bg-purple-400' href='https://www.instagram.com/kl_hmt_07/'><FaSquareInstagram /></a>
         </div>
           
     </div> 

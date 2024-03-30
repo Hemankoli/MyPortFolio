@@ -55,18 +55,18 @@ const Project = () => {
             </button>
           </div>
         </div>
-        <div className='flex md:w-[700px] items-center gap-6 mt-10 mx-4 md:mx-auto flex-wrap justify-center' data-aos="zoom-in">
+        <div className='flex md:w-[700px] items-center  gap-6 mt-10 mx-4 md:mx-auto flex-wrap justify-center' data-aos="zoom-in">
           {port.slice(0, nextItem).map((project) => (
             <div key={project.id}
-              className="group w-full sm:w-[48%] md:w-[31%] lg:w-[31%] relative z-[1]"
+              className="group w-full  sm:w-[48%] md:w-[31%] lg:w-[31%] relative z-[1]"
               data-aos="zoom-in"
               data-aos-delay="50"
               data-aos-duration="1500">
               <figure>
-                <img className='rounded-lg border w-80 h-48 md:w-full md:h-44 p-4 bg-purple-300 mx-auto' src={project.imgUrl} alt='' />
+                <img className='rounded-lg border w-80 h-48 md:w-full md:h-44 p-2 bg-purple-500 mx-auto' src={project.imgUrl} alt='' />
               </figure>
 
-              <div className='w-full h-full bg-purple-500 bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block'>
+              <div className='w-full h-full bg-purple-400 bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block'>
                 <div className='w-full h-full flex items-center justify-center'>
                   <button onClick={() => showModelHandler(project.id)} className='text-white bg-purple-500 px-4 py-2 rounded-md shadow-md font-[500] hover:bg-purple-500 hover:text-white transition duration-300'>
                     See Details
