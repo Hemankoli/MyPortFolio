@@ -26,13 +26,12 @@ const About = () => {
         <div className="mb-8 md:mb-0">
           <img src={profile} alt="profile" className="w-40 h-40 md:w-64 md:h-64 rounded-md object-cover mx-auto" />
         </div>
-        <div className="text-lg mx-4 text-center w-full max-w-xl">
+        <div className="text-lg mx-4  w-full max-w-xl">
           <p className="mb-4 font-mono">
-            <span className='text-red-400 font-semibold text-xl'>A MERN stack developer </span> is a skilled professional proficient in using the <span className='text-purple-400 italic underline'> MERN
-            (MongoDB, Express.js, React, Node.js)</span> technology stack for web development.
-            I specialize in building robust and dynamic web applications, leveraging MongoDB
-            for database management,<span className='text-purple-400 italic underline'> Express.js for server-side development, React for creating
-            interactive user interfaces, and Node.js for server-side scripting. </span>
+           <span className='text-red-400 text-xl'>Welcome !</span> I am a passionate and dedicated professional with a diverse range of skills and experiences.
+           Throughout my career journey, I have honed my abilities in various domains, showcasing a strong commitment to 
+           excellence and continuous learning.<br></br>Looking ahead, I am excited about <span className='text-purple-500 italic'>Softawer Developer</span>, where 
+           I plan to leverage my experiences and skills to make meaningful contributions and continue growing both personally and professionally.
           </p>
         </div>
       </div>
