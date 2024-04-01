@@ -20,8 +20,8 @@ const About = () => {
   return (
     <div className="text-black mt-20 md:mt-40 mb-28 mx-auto px-4">
       <p className="text-sm text-center">Get To Know More</p>
-      <h1 className="text-4xl font-bold text-center mt-4 text-purple-500 mb-12">— Know Who <span className='text-red-400'>I'M</span> 🧐</h1>
-
+      <h1 className="text-4xl font-bold text-center mt-4 text-purple-500 mb-12">— Know Who 
+      <span className='text-red-400'>I'M</span> 🧐</h1>
       <div className="flex flex-col md:flex-row items-center justify-center space-x-0 md:space-x-40 mt-10 md:mt-20 mb-8">
         <div className="mb-8 md:mb-0">
           <img src={profile} alt="profile" className="w-40 h-40 md:w-64 md:h-64 rounded-md object-cover mx-auto" />
@@ -35,7 +35,6 @@ const About = () => {
             interactive user interfaces, and Node.js for server-side scripting. </span>
           </p>
         </div>
-
       </div>
 
       <div className="text-center mt-20">
@@ -43,19 +42,19 @@ const About = () => {
           <h2 className="text-2xl text-red-400 font-bold italic">Skills ⚡</h2>
         </div>
         <div className="flex flex-wrap justify-center gap-12" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="2000">
-      {/* Skills Icons */}
-      <img src={html} alt="html" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-      <img src={css} alt="Css" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-      <img src={JavaScript} alt="JavaScript" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-      <img src={react} alt="React" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-      <img src={Java} alt="Java" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-      <img src={Tailwind} alt="Tailwind" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-      <img src={mongodb} alt="mongodb" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-      <img src={Node} alt="node" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-      <img src={Express} alt="express" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-      <img src={mysql} alt="mysql" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-      <img src={git} alt="git" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-    </div>  
+          {/* Skills Icons */}
+          <img src={html} alt="html" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+          <img src={css} alt="Css" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+          <img src={JavaScript} alt="JavaScript" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+          <img src={react} alt="React" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+          <img src={Java} alt="Java" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+          <img src={Tailwind} alt="Tailwind" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+          <img src={mongodb} alt="mongodb" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+          <img src={Node} alt="node" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+          <img src={Express} alt="express" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+          <img src={mysql} alt="mysql" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+          <img src={git} alt="git" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
+        </div>  
       </div>
 
       {/* Education Section */}
@@ -65,7 +64,7 @@ const About = () => {
         </div>
         <div className='flex flex-col justify-center  md:m-0 m-4 sm:py-12'>
           <div className='w-full py-3 px-2 sm:max-w-xl sm:mx-auto sm:px-0'>
-            <div className='relative text-gray-700  antialiased text-sm font-semibold'>
+            <div className='relative text-gray-700  antialiased text-sm font-semibold'> 
               {/* vertical line */}
               <div className='hidden absolute w-1 sm:block bg-purple-400 h-full left-1/2 transform -translate-x-1/2'></div>
               {/*left card */}
@@ -77,11 +76,11 @@ const About = () => {
                         <h2 className='text-purple-500 font-bold mb-3 group-hover:text-white group-hover:font-semibold text-2xl'>Bachelor's of Technology Degree</h2>
                         <h4 className="text-lg font-bold group-hover:text-white group-hover:font-semibold mb-4">(2019 - 2023)</h4>
                         <p className='text-sm text-gray-700    group-hover:text-white group-hover:font-normal'>
-                          I completed my B.Tech degree in the field of Electronics and Telecommunication Engineering (ENTC) with 8.03 CGPA.
+                          I completed my B.Tech degree in field of Electronics and Telecommunication Engineering with 8.03 CGPA.
                         </p>
                       </div>
                     </div>
-                  </div>
+                  </div> 
                   <div className='rounded-full bg-purple-500 border-white border-4 w-10 h-10 absolute left-1/2 transform -translate-x-1/2 -translate-y-4 sm:translate-y-4 flex items-center justify-center'>
                     <figure>
                       <img src={educational} alt='' className="w-5 h-5" />
