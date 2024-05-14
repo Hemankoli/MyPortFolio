@@ -21,7 +21,7 @@ const About = () => {
     <div className="text-black mt-20 md:mt-40 mb-28 mx-auto px-4">
       <p className="text-sm text-center">Get To Know More</p>
       <h1 className="text-4xl font-bold text-center mt-4 text-purple-500 mb-12">— Know Who 
-      <span className='text-red-400'>I'M</span> 🧐</h1>
+      <span className='text-red-400'>I'M</span> </h1>
       <div className="flex flex-col md:flex-row items-center justify-center space-x-0 md:space-x-40 mt-10 md:mt-20 mb-8">
         <div className="mb-8 md:mb-0">
           <img src={profile} alt="profile" className="w-40 h-40 md:w-64 md:h-64 rounded-md object-cover mx-auto" />
@@ -211,5 +211,5 @@ const About = () => {
     </div>
   );
 };
-
+ 
 export default About;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HiMenu, HiX } from 'react-icons/hi';
 import {FcHome, FcBusinessman,FcAssistant,FcBookmark,FcDiploma2 } from "react-icons/fc";
-
+import Resume from "../Assets/HEMANT KOLI RESUME.pdf";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,9 +37,9 @@ const Header = () => {
             <Link to={"/project"} className="inline-flex items-center text-gray-500 hover:bg-orange-400 hover:text-black p-2 rounded-lg">
               <FcBookmark className="w-6 h-6 mr-2" /> Projects
             </Link>
-            <Link to={"/resume"} className="inline-flex items-center text-gray-500 hover:bg-purple-400 hover:text-black p-2 rounded-lg">
+            <a href={Resume} download className="inline-flex items-center text-gray-500 hover:bg-purple-400 hover:text-black p-2 rounded-lg">
               <FcDiploma2 className="w-6 h-6 mr-2" /> Resume
-            </Link>
+            </a> 
             <Link to={"/contact"} className="inline-flex items-center text-gray-500 hover:bg-blue-400 hover:text-black p-2 rounded-lg">
               <FcAssistant className="w-6 h-6 mr-2" /> Contact
             </Link>
@@ -68,9 +68,9 @@ const Header = () => {
               <Link to={"/project"} onClick={closeMenu} className="flex items-center text-gray-500 hover:bg-orange-400 hover:text-black p-2 rounded-lg mb-4 text-center text-lg">
                 <FcBookmark className="w-6 h-6 mr-2" /> Projects
               </Link>
-              <Link to={"/resume"} onClick={closeMenu} className="flex items-center text-gray-500 hover:bg-purple-400 hover:text-black p-2 rounded-lg mb-4 text-center text-lg">
+              <a href={Resume} download onClick={closeMenu} className="flex items-center text-gray-500 hover:bg-purple-400 hover:text-black p-2 rounded-lg mb-4 text-center text-lg">
                 <FcDiploma2 className="w-6 h-6 mr-2" /> Resume
-              </Link>
+              </a>
               <Link to={"/contact"} onClick={closeMenu} className="flex items-center text-gray-500 hover:bg-blue-400 hover:text-black p-2 rounded-lg mb-4 text-center text-lg">
                 <FcAssistant className="w-6 h-6 mr-2" /> Contact
               </Link>
