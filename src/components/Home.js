@@ -12,23 +12,25 @@ import { FaSquareInstagram } from "react-icons/fa6";
 
 const Home = () => {
   return (
-    <div>
-        <div className=" text-black mb-28 mx-auto mt-20 md:mt-40 flex flex-col md:flex-row items-center justify-center md:justify-center">
-          <div className="md:text-left mb-8 md:mb-0 md:p-20">
-            <h2 className="text-4xl font-bold mb-4">
-              <div className="animate-shake inline-block mb-2">&#x1F44B;</div>, 
-              <br></br>I'M<span className='text-purple-500 font-[700]'> HEMANT KOLI</span> 
-            </h2>
-            <div className='text-red-400 font-bold font-serif text-2xl py-10'>
+    <div className='max-w-7xl mx-auto'>
+        <div className=" text-black mb-28 mt-20 md:mt-40 flex flex-col md:flex-row items-center justify-between md:justify-between">
+          <div className='flex flex-col justify-center items-center'>
+            <div className="md:text-left -mb-12 md:-mb-28 md:p-20">
+              <h2 className="text-2xl md:text-4xl font-bold mb-4">
+                <div className="animate-shake inline-block mb-2">&#x1F44B;</div>, 
+                <br></br>I'M<span className='text-purple-500 font-[700]'> HEMANT KOLI</span> 
+              </h2>
+            </div>
+            <div className='text-red-400 font-bold font-serif text-lg md:text-2xl py-10'>
                 <Type />
             </div>
           </div>
-            <div className="mb-8 md:mx-20 m-4">
-              <img
-                src={home}
-                alt="Profile"
-                className=" w-96 h-96 object-cover"
-              />
+          <div className="mb-8 md:mx-20 m-4">
+            <img
+              src={home}
+              alt="Profile"
+              className=" w-96 h-96 object-cover"
+            />
           </div> 
           
         </div>

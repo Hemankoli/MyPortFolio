@@ -21,7 +21,7 @@ const About = () => {
     <div className="text-black mt-20 md:mt-40 mb-28 mx-auto px-4">
       <p className="text-sm text-center">Get To Know More</p>
       <h1 className="text-4xl font-bold text-center mt-4 text-purple-500 mb-12">— Know Who 
-      <span className='text-red-400'>I'M</span> </h1>
+      <span className='text-red-400'> I'M</span> </h1>
       <div className="flex flex-col md:flex-row items-center justify-center md:space-x-10 lg:space-x-20 mt-10 md:mt-20 mb-8 px-4 md:px-0">
         <div className="mb-8 md:mb-0">
           <img 
@@ -45,21 +45,35 @@ const About = () => {
         <div className="mb-20">
           <h2 className="text-2xl text-red-400 font-bold italic">Skills ⚡</h2>
         </div>
+        
         <div className="flex flex-wrap justify-center gap-12" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="2000">
-          {/* Skills Icons */}
-          <img src={html} alt="html" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-          <img src={css} alt="Css" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-          <img src={JavaScript} alt="JavaScript" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-          <img src={react} alt="React" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-          <img src={Java} alt="Java" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-          <img src={Tailwind} alt="Tailwind" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-          <img src={mongodb} alt="mongodb" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-          <img src={Node} alt="node" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-          <img src={Express} alt="express" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-          <img src={mysql} alt="mysql" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-          <img src={git} alt="git" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
-        </div>  
-      </div>hk
+          {/* Skill Icons */}
+          {[
+            { src: html, alt: "HTML", label: "HTML" },
+            { src: css, alt: "CSS", label: "CSS" },
+            { src: JavaScript, alt: "JavaScript", label: "JavaScript" },
+            { src: react, alt: "React", label: "React.Js" },
+            { src: Java, alt: "Java", label: "Java" },
+            { src: Tailwind, alt: "Tailwind", label: "TailwindCSS" },
+            { src: mongodb, alt: "MongoDB", label: "MongoDB" },
+            { src: Node, alt: "Node", label: "Node.Js" },
+            { src: Express, alt: "Express", label: "Express.Js" },
+            { src: mysql, alt: "MySQL", label: "MySQL" },
+            { src: git, alt: "Git", label: "Git" }
+          ].map((skill, index) => (
+          <div key={index} className="relative group">
+            <img
+              src={skill.src}
+              alt={skill.alt}
+              className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500"
+            />
+            <span className="absolute -top-10 left-1/2 transform -translate-x-1/2 bottom-0 text-white font-semibold rounded-md shadow-lg h-8 bg-purple-500 text-sm  px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+              {skill.label}
+            </span>
+          </div>
+          ))}
+        </div>
+      </div>
 
       {/* Education Section */}
       <div className="text-center mb-20 mt-20">

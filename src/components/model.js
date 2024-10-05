@@ -5,7 +5,7 @@ const Model = ({ activeID, setShowModel }) => {
   const portfolio = projects.find(item => item.id === activeID);
 
   return (
-    <div className='fixed top-0 left-0 z-[10] w-full h-full p-4  bg-black bg-opacity-40 flex items-center justify-center'>
+    <div className='fixed shadow-lg top-0 left-0 z-[10] w-full h-full p-4  bg-black bg-opacity-30 flex items-center justify-center'>
       <div className='relative max-w-[350px] bg-white rounded-md p-5'>
         <div className='mb-5'>
           <figure>

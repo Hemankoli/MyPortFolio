@@ -63,7 +63,7 @@ const Project = () => {
               data-aos-delay="50"
               data-aos-duration="1500">
               <figure>
-                <img className='rounded-lg border w-80 h-48 md:w-full md:h-44 p-2 bg-purple-500 mx-auto' src={project.imgUrl} alt='' />
+                <img className='rounded- w-80 h-48 md:w-full md:h-44 p-1 bg-purple-500 mx-auto' src={project.imgUrl} alt='' />
               </figure>
 
               <div className='w-full h-full bg-purple-400 bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block'>
@@ -78,7 +78,7 @@ const Project = () => {
         </div>
         <div className='text-center mt-6 mb-2'>
           {nextItem < port.length && projectsData.length > 6 && (
-            <button onClick={loadMore} className='text-white hover:bg-purple-700 bg-purple-500 px-4 py-2 rounded-md shadow-md font-[500] hover:text-white transition duration-300'>
+            <button onClick={loadMore} className='text-white hover:bg-purple-700  bg-purple-500 px-4 py-2 rounded-md shadow-md font-[500] hover:text-white transition duration-300'>
               Load More
             </button>
           )}
