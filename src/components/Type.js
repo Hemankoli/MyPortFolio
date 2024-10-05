@@ -6,7 +6,7 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Aspiring Software Developer",
+          "Aspiring MERN Stack Developer",
        ],
         autoStart: true,
         loop: true,
@@ -16,4 +16,4 @@ function Type() {
   );
 }
 
-export default Type;
+export default Type;  

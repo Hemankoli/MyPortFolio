@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <div>
-      <header className="py-2 shadow-lg fixed top-0 left-0 right-0 z-50 bg-white">
+      <header className="py- shadow-lg fixed top-0 left-0 right-0 z-50 bg-white">
         <div className='flex items-center justify-between mx-4 md:mx-10'>
           <Link to={"/"} className='flex items-center px-0 md:px-4 space-x-0'>
             <img src='https://cdn-icons-png.freepik.com/512/146/146007.png' alt='' className='w-10 h-10' />

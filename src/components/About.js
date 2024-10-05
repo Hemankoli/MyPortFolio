@@ -22,19 +22,24 @@ const About = () => {
       <p className="text-sm text-center">Get To Know More</p>
       <h1 className="text-4xl font-bold text-center mt-4 text-purple-500 mb-12">— Know Who 
       <span className='text-red-400'>I'M</span> </h1>
-      <div className="flex flex-col md:flex-row items-center justify-center space-x-0 md:space-x-40 mt-10 md:mt-20 mb-8">
+      <div className="flex flex-col md:flex-row items-center justify-center md:space-x-10 lg:space-x-20 mt-10 md:mt-20 mb-8 px-4 md:px-0">
         <div className="mb-8 md:mb-0">
-          <img src={profile} alt="profile" className="w-40 h-40 md:w-64 md:h-64 rounded-md object-cover mx-auto" />
+          <img 
+            src={profile} 
+            alt="profile" 
+            className="w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 rounded-md object-cover mx-auto" 
+          />
         </div>
-        <div className="text-lg mx-4  w-full max-w-xl">
+        <div className="text-lg w-full max-w-2xl">
           <p className="mb-4 font-mono">
-           <span className='text-red-400 text-xl'>Welcome !</span> I am a passionate and dedicated professional with a diverse range of skills and experiences.
-           Throughout my career journey, I have honed my abilities in various domains, showcasing a strong commitment to 
-           excellence and continuous learning.<br></br>Looking ahead, I am excited about <span className='text-purple-500 italic'>Softawer Developer</span>, where 
-           I plan to leverage my experiences and skills to make meaningful contributions and continue growing both personally and professionally.
+            <span className="text-red-400 text-xl">Welcome !</span> I am a passionate and dedicated professional with a diverse range of skills and experiences.
+            Throughout my career journey, I have honed my abilities in various domains, showcasing a strong commitment to 
+            excellence and continuous learning.<br/>Looking ahead, I am excited about <span className="text-purple-500 italic">Software Developer</span>, where 
+            I plan to leverage my experiences and skills to make meaningful contributions and continue growing both personally and professionally.
           </p>
         </div>
       </div>
+
 
       <div className="text-center mt-20">
         <div className="mb-20">
@@ -54,7 +59,7 @@ const About = () => {
           <img src={mysql} alt="mysql" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
           <img src={git} alt="git" className="w-16 h-16 border rounded p-2 cursor-pointer border-purple-600 transition duration-200 ease-in-out transform hover:scale-110 shadow-md shadow-purple-500" />
         </div>  
-      </div>
+      </div>hk
 
       {/* Education Section */}
       <div className="text-center mb-20 mt-20">
