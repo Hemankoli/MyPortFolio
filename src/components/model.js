@@ -29,7 +29,7 @@ const Model = ({ activeID, setShowModel }) => {
         </div>
         <button
           onClick={() => setShowModel(false)}
-          className='absolute top-6 right-6 w-6 h-6 bg-white text-black text-lg flex items-center justify-center rounded cursor-pointer'
+          className='absolute top-6 right-6 w-6 h-6 bg-purple-500 text-white text-lg flex items-center justify-center rounded cursor-pointer'
         >
           &times;
         </button>
