@@ -12,7 +12,7 @@ import { FaSquareInstagram } from "react-icons/fa6";
 
 const Home = () => {
   return (
-    <div className='max-w-7xl mx-auto'>
+    <div className='max-w-6xl mx-auto'>
         <div className=" text-black mb-28 mt-20 md:mt-40 flex flex-col md:flex-row items-center justify-between md:justify-between">
           <div className='flex flex-col justify-center items-center'>
             <div className="md:text-left -mb-12 md:-mb-28 md:p-20">

@@ -18,7 +18,7 @@ import educational from '../images/educatio.png'
 const About = () => {
 
   return (
-    <div className="text-black mt-20 md:mt-40 mb-28 mx-auto px-4">
+    <div className="max-w-6xl mx-auto text-black mt-20 md:mt-40 mb-28 px-4">
       <p className="text-sm text-center">Get To Know More</p>
       <h1 className="text-4xl font-bold text-center mt-4 text-purple-500 mb-12">— Know Who 
       <span className='text-red-400'> I'M</span> </h1>
